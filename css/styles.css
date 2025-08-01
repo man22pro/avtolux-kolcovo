@@ -84,7 +84,6 @@ ul {
 .btn--outline {
     background-color: #075e54;
     background-color: #25D366;
-    /* background-color: var(--primary-color); */
     color: var(--white-color);
 }
 
@@ -97,7 +96,6 @@ ul {
 .btn--outline:hover {
     background-color: #25D366;
     background-color: #075e54;
-    /* background-color: var(--primary-color-hover); */
     transform: translateY(-2px);
     box-shadow: var(--shadow);
 }
@@ -142,11 +140,13 @@ ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 0;
+    padding: 22px 0;
+    line-height: 1.0;
 }
 
 .logo img {
     width: 32px;
+    height: 32px;
 }
 
 .logo {
@@ -224,30 +224,21 @@ ul {
     align-items: end;
 
     gap: 10px;
-    /* padding: 27px; */
     padding: 25px 27px 10px;
-    /* margin: 4px; */
     color: var(--secondary-color);
     background: var(--white-color);
-    /* border-radius: 6px; */
 
     font-weight: 600;
     /* position: relative; */
-    /* padding: 5px 0; */
     transition: var(--transition);
-
-    /* border: 2px solid; */
 
     box-shadow: var(--shadow);
     position: fixed;
-    /* width: 100%; */
     width: 100%;
     min-width: 150px;
     top: 4px;
     right: 0px;
-    /* left: 4px; */
     z-index: 1011;
-
 }
 
 #burger-menu a:hover {
@@ -261,12 +252,7 @@ ul {
     border: 1px solid var(--primary-color);
     border-radius: 4px;
     cursor: pointer;
-    /* padding: auto ; */
-
-
 }
-
-
 
 /* =================================================================================== */
 
@@ -425,7 +411,6 @@ ul {
 .about__image img {
     width: 100%;
     height: 100%;
-    /* max-height: min-content; */
     object-fit: cover;
     transition: var(--transition);
 }
@@ -460,41 +445,6 @@ ul {
 /*      COMMENTS     */
 
 /* =================================================================================== */
-
-/* .yandex-comments {
-    margin: 0 auto;
-    max-width: 760px;
-    height: 760px;
-    overflow: hidden;
-    position: relative;
-}
-
-.yandex-comments iframe {
-    width: 100%;
-    height: 100%;
-    border: 1px solid var(--light-color);
-    border-radius: 8px;
-}
-
-.yandex-comments a {
-    text-decoration: none;
-    color: var(--light-color);
-    font-size: 10px;
-    font-family: YS Text, sans-serif;
-    padding: 0 20px;
-    position: absolute;
-    bottom: 8px;
-    width: 100%;
-    text-align: center;
-    left: 0;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: block;
-    max-height: 14px;
-    white-space: nowrap;
-    padding: 0 16px;
-    box-sizing: border-box;
-} */
 
 .reviews {
     padding: 80px 0;
@@ -532,7 +482,9 @@ ul {
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
-    -webkit-line-clamp: 10;
+    
+    -webkit-line-clamp: 10; 
+
     -webkit-box-orient: vertical;
 }
 
@@ -602,12 +554,13 @@ ul {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
+    font-size: 1.3rem;
 }
 
 .contact-icon {
     margin-right: 15px;
     color: var(--primary-color);
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     width: 20px;
     text-align: center;
 }
@@ -618,12 +571,6 @@ ul {
     overflow: hidden;
     box-shadow: var(--shadow);
 }
-
-/* .yandex-maps {
-    width: 100%;
-    height: 100%;
-    border: 0;
-} */
 
 .social-links {
     display: flex;
@@ -673,20 +620,24 @@ ul {
 
 .footer__logo img {
     width: 28px;
+    height: 28px;
 }
 
 .footer__logo-name {
     font-family: "STIX Two Text", serif;
     color: var(--primary-color);
     display: flex;
-    align-items: center;
-    gap: 6px;
+    align-items: flex-end;
+    /* gap: 6px; */
     font-size: 24px;
     font-weight: 600;
+    line-height: 1.0;
+    vertical-align: middle;
 }
 
 .footer__logo span {
     color: var(--secondary-color);
+    vertical-align: middle;
 }
 
 .footer__text {
@@ -700,7 +651,6 @@ ul {
     font-size: 1.3rem;
     margin-bottom: 20px;
     font-family: "STIX Two Text", serif;
-    /* font-family: 'Playfair Display', serif; */
     /* color: var(--text-color); */
 }
 
@@ -759,7 +709,6 @@ ul {
     padding-top: 20px;
     border-top: 1px solid var(--gray-color);
     text-align: center;
-
 }
 
 .footer__copyright {
